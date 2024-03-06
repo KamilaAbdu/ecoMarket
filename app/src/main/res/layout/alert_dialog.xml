@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    layout_width="wrap_content"
+    layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="15dp"
+    android:elevation="2dp"
+    android:outlineAmbientShadowColor="@color/green"
+    android:outlineSpotShadowColor="@color/green">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#DAF1D2">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Подвердите действие"
+            android:textSize="22sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_thin"
+            android:textColor="@color/darkGreen" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:fontFamily="@font/poppins_thin"
+            android:text="Вы хотите продолжить с выбранной страной?"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="16dp">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_consel"
+                android:layout_width="100dp"
+                android:layout_height="65dp"
+                android:layout_margin="16dp"
+                android:layout_marginTop="156dp"
+                android:background="@drawable/btn_green_90"
+                android:text="Отмена"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:elevation="2dp"
+                android:outlineAmbientShadowColor="@color/green"
+                android:outlineSpotShadowColor="@color/green"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_thin"
+                app:layout_constraintEnd_toStartOf="@+id/btn_yes"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_yes"
+                android:layout_width="100dp"
+                android:layout_height="65dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/btn_green_90"
+                android:text="Да"
+                android:elevation="2dp"
+                android:outlineAmbientShadowColor="@color/green"
+                android:outlineSpotShadowColor="@color/green"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_thin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
